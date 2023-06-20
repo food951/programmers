@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+select *
+from book;
+SELECT BOOK_ID,DATE_FORMAT(PUBLISHED_DATE, '%Y-%m-%d') as PUBLISHED_DATE
+from BOOK
+where LEFT(PUBLISHED_DATE,4)="2021" and CATEGORY = "인문"
+ORDER by PUBLISHED_DATE ASC;
