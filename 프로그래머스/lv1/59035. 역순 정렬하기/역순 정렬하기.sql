@@ -1,0 +1,4 @@
+-- 코드를 입력하세요
+SELECT NAME, DATETIME
+from ANIMAL_INS
+ORDER by ANIMAL_ID DESC;
