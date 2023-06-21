@@ -10,3 +10,4 @@ def solution(left, right):
         else:
             answer -=i
     return answer
+# 모든 제곱수의 약수의 갯수는 홀수, 나머지 수는 짝수이다...
