@@ -7,6 +7,6 @@ def solution(str_list):
         elif str_list[i] =="r":
             answer = str_list[i+1:]
             break;
-        
-        
+
+
     return answer
