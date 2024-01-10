@@ -1,16 +1,8 @@
+from collections import Counter
+
 def solution(participant, completion):
     
-    participant_count = {}
-
-    for name in participant:
-        if name in participant_count:
-            participant_count[name] += 1
-        else:
-            participant_count[name] = 1
-
-    for name in completion:
-        participant_count[name] -= 1
-
-    for name, count in participant_count.items():
-        if count != 0:
-            return name
+    p_count = Counter(participant)
+    c_count=Counter(completion)
+    answer= list((p_count-c_count).keys())[0]
+    return answer
